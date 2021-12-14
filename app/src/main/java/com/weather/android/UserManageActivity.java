@@ -61,6 +61,7 @@ public class UserManageActivity extends AppCompatActivity {
                         final EditText editText1 = view.findViewById(R.id.editText1);
                         final EditText editText2 = view.findViewById(R.id.editText2);
                         final EditText editText3 = view.findViewById(R.id.editText3);
+                        final EditText editText4 = view.findViewById(R.id.editText4);
                         //用户名设置为编辑框输入的内容
                         textView.setText(username);
                         builder.setPositiveButton("确定", new AlertDialog.OnClickListener() {
@@ -69,9 +70,10 @@ public class UserManageActivity extends AppCompatActivity {
                                         String password = editText1.getText().toString();
                                         String phone = editText2.getText().toString();
                                         String address = editText3.getText().toString();
+                                        String sex = editText4.getText().toString();
                                         //判断密码是否为空，电话、地址可以为空。
                                         if (!TextUtils.isEmpty(password)){
-                                            db.execSQL("insert into user values(null,?,?,?,?)",new String[]{username,password,phone,address});
+                                            db.execSQL("insert into user values(null,?,?,?,?,?)",new String[]{username,password,phone,address,sex});
                                             Cursor cursor2 = db.rawQuery("select * from user where username = ?",new String[]{username});
                                             //判断是否添加成功
                                             if (cursor2.moveToNext()){
@@ -143,12 +145,14 @@ public class UserManageActivity extends AppCompatActivity {
                 final EditText editText1 = view.findViewById(R.id.editText1);
                 final EditText editText2 = view.findViewById(R.id.editText2);
                 final EditText editText3 = view.findViewById(R.id.editText3);
+                final EditText editText4 = view.findViewById(R.id.editText4);
                 textView.setText(username);
                 //将数据库查询到的用户信息，填充在文本框里
                 while (cursor.moveToNext()){
                         editText1.setText(cursor.getString(2));
                         editText2.setText(cursor.getString(3));
-                        editText3.setText(cursor.getString(4));
+                        editText3.setText(cursor.getString(5));
+                        editText4.setText(cursor.getString(4));
                 }
                 //点击确定更新数据
                 builder.setPositiveButton("确定", new AlertDialog.OnClickListener() {
@@ -157,10 +161,11 @@ public class UserManageActivity extends AppCompatActivity {
                         String password = editText1.getText().toString();
                         String phone = editText2.getText().toString();
                         String address = editText3.getText().toString();
+                        String sex = editText4.getText().toString();
                         //判断密码是否为空,地址、电话可以为空
                         if(!TextUtils.isEmpty(password)){
                             //更新数据库
-                            db.execSQL("update user set password = ?, phone = ?, address = ? where username = ?",new String[]{password,phone,address,username});
+                            db.execSQL("update user set password = ?, phone = ?, address = ?,sex = ? where username = ?",new String[]{password,phone,address,sex,username});
                             closeDialog(dialog,true);
                         }else {
                             Toast.makeText(UserManageActivity.this, "密码不能为空!", Toast.LENGTH_SHORT).show();

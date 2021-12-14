@@ -17,6 +17,7 @@ public class MyHelper extends SQLiteOpenHelper {
             "username varchar(20) not null," +
             "password varchar(20) not null," +
             "phone varchar(20) default ''," +
+            "sex varchar(20) default ''," +
             "address varchar(20) default '')";
     db.execSQL(sql);
     }
