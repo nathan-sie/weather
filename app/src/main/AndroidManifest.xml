@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Weather">
-        <activity
-            android:name=".MainActivity"
+        <activity android:name=".UserManageActivity"
+            android:label="用户管理"></activity>
+        <activity android:name=".RegisterActivity"
+            android:label="注册"/>
+        <activity android:name=".MainActivity"
+            android:label="天气预报登录"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
