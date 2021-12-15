@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_loc.xml" value="0.1" />
+        <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_login.xml" value="0.18854166666666666" />
         <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_main.xml" value="0.25271739130434784" />
+        <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_main2.xml" value="0.1859375" />
         <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_register.xml" value="0.1296875" />
-        <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_user_manage.xml" value="0.1296875" />
+        <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_user_manage.xml" value="0.2" />
+        <entry key="..\:/android_project/weather/app/src/main/res/layout/choose_area.xml" value="0.1" />
         <entry key="..\:/android_project/weather/app/src/main/res/layout/edit_user.xml" value="0.2" />
       </map>
     </option>

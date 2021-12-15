@@ -2,6 +2,7 @@ package com.weather.android;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -24,7 +25,7 @@ import java.util.List;
 public class UserManageActivity extends AppCompatActivity {
     private EditText editText;
     private TextView textView;
-    private Button button1,button2;
+    private Button button1,button2,button3;
     private ListView listView;
     private ArrayAdapter arrayAdapter;
     private List<String> list;
@@ -36,6 +37,7 @@ public class UserManageActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button);
         listView = findViewById(R.id.listView);
         list = new ArrayList<>();
         //添加按钮
@@ -125,6 +127,14 @@ public class UserManageActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(UserManageActivity.this,"输入内容不能为空!",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserManageActivity.this, MainActivity.class));
+                finish();
             }
         });
         //点击listView的每一项时,弹出编辑用户信息的对话框
