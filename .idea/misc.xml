@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1703125" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1703125" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/activity_weather.xml" value="0.24230072463768115" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/activity_welcome.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/aqi.xml" value="0.1390625" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/choose_area.xml" value="0.15520833333333334" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/forecast.xml" value="0.24230072463768115" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/forecast_item.xml" value="0.24230072463768115" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/now.xml" value="0.24230072463768115" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/suggestion.xml" value="0.24230072463768115" />
+        <entry key="..\:/Users/nate/Desktop/weather/app/src/main/res/layout/title.xml" value="0.264" />
         <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_loc.xml" value="0.1" />
         <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_login.xml" value="0.18854166666666666" />
         <entry key="..\:/android_project/weather/app/src/main/res/layout/activity_main.xml" value="0.25271739130434784" />

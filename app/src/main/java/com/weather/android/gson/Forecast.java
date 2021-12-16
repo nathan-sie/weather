@@ -3,21 +3,19 @@ package com.weather.android.gson;
 import com.google.gson.annotations.SerializedName;
 
 public class Forecast {
-    public String date;//日期
+    @SerializedName("date")
+    public String date;
 
-    @SerializedName("tmp")
-    public Temperature temperature;//气温
+    @SerializedName("tmp_max")
+    public String temmax;
 
-    @SerializedName("cond")
-    public More more;
+    @SerializedName("tmp_min")
+    public String temmin;
 
-    public class Temperature {
-        public String max;//最高温
-        public String min;//最低温
-    }
+    @SerializedName("cond_txt_d")
+    public String condday;
 
-    public class More {
-        @SerializedName("txt_d")
-        public String info;//描述
-    }
+    @SerializedName("cond_txt_n")
+    public String condnight;
+
 }

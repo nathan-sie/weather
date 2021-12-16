@@ -23,9 +23,10 @@
         <activity android:name=".RegisterActivity"
             android:label="注册"/>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".WelcomeActivity"/>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".LoginActivity"
-            android:label="天气预报登录"
+            android:label="天气与你"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
