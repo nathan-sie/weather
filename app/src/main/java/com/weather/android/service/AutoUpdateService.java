@@ -83,7 +83,7 @@ public class AutoUpdateService extends Service {
      * 更新必应每日一图
      */
     private void updateBingPic() {
-        String requestBingPic = "http://www.ngchina.com.cn/photography/photo_of_the_day";
+        String requestBingPic = "http://guolin.tech/api/bing_pic";
         HttpUtil.sendOkHttpRequest(requestBingPic, new Callback() {
             @Override
             public void onResponse(Call call, Response response) throws IOException {

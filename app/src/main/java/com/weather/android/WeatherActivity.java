@@ -261,10 +261,7 @@ public class WeatherActivity extends AppCompatActivity {
 
 
     public void requestWeather(final String weatherId) {
-        //String weatherUrl = "free-api.heweather.net/s6/weather/?location=" + weatherId + "&key=9f864871b4e74a72b14a028b68266c43"
-        //String weatherUrl = "http://guolin.tech/api/weather?cityid=" + weatherId + "&key=bc0418b57b2d4918819d3974ac1285d9";
-        //实现数据长期存储，方便再次进入程序，读取上次城市id
-
+        
         if (autoid!=null) {
             SharedPreferences setting = getSharedPreferences("setting", 0);
             SharedPreferences.Editor editor = setting.edit();
@@ -329,6 +326,7 @@ public class WeatherActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(WeatherActivity.this).edit();
                 editor.putString("bing_pic", bingPic);
                 editor.apply();
+                System.out.println("where");
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {

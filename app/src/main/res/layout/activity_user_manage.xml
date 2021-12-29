@@ -107,8 +107,8 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="182dp"
-        tools:layout_editor_absoluteY="176dp" />
+        android:text="进入天气预报"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="687dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
